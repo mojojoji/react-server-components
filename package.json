@@ -4,21 +4,29 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
+    "build-client": "esbuild src/client.tsx --bundle --outfile=public/client.js",
+    "build": "tsc",
+    "dev": "tsc-watch --build --noClear --onSuccess \"node dist/index.js\""
   },
   "keywords": [],
-  "author": "Ives van Hoorne",
+  "author": "Joji Augustine",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/codesandbox-app/static-template/issues"
   },
   "homepage": "https://github.com/codesandbox-app/static-template#readme",
-  "devDependencies": {
-    "nodemon": "^3.0.1"
+  "dependencies": {
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "dependencies": {}
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "esbuild": "^0.19.10",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.3.3"
+  }
 }

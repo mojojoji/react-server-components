@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "nodenext",
+    "module": "NodeNext"
+  },
+  "include": ["src/**/*"]
+}
