@@ -16,7 +16,6 @@ app.get("/", (req, res) => {
     {
       bootstrapScripts: ["public/client.js"],
       onShellReady() {
-        res.setHeader("content-type", "text/html");
         pipe(res);
       },
     },
