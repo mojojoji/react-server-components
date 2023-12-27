@@ -4,7 +4,8 @@
     "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "nodenext",
-    "module": "NodeNext"
+    "module": "NodeNext",
+    "types": ["react/canary"]
   },
   "include": ["src/**/*"]
 }
